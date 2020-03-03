@@ -1,0 +1,11 @@
+<PowerSelect
+  @searchField="name"
+  @options={{this.selections}}
+  @selected={{this.selectedParam}}
+  @onChange={{fn (mut this.selectedParam)}}
+  @onOpen={{perform this.testTask}}
+  @placeholder="Filter by location"
+  @loadingMessage="Loading locations.."
+  as |sel|>
+    {{sel}}
+</PowerSelect>
